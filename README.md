@@ -10,6 +10,15 @@ Phil reacts to notes. To put it simple, take any instrument that is capable of e
 ## What can I do?
 Up to you. Read the examples and just add to callbacks.py any function you want to execute. Then, on detections.py just map the note to the corresponding function as per example.
 
+## Installation and running
+
+	git clone https://github.com/thecookingsenpai/Phil
+	cd Phil
+	pip3 install -r requirements.txt
+	python3 phil.py
+
+Phil stays in your tray bar, if needed.
+
 ## Example
 Let's write a method to be executed on "D" note.
 In callbacks.py
