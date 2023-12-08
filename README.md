@@ -14,10 +14,10 @@ Up to you. Read the examples and just add to callbacks.py any function you want 
 
 	git clone https://github.com/thecookingsenpai/Phil
 	cd Phil
-	pip3 install -r requirements.txt
-	python3 phil.py
+	sh setup.sh
+	source run.sh
 
-Phil stays in your tray bar, if needed.
+Phil stays in your tray bar, if need to quit or to edit preferences.
 
 ## Example
 Let's write a method to be executed on "D" note.

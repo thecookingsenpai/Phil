@@ -14,6 +14,9 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
+with open("/tmp/phil_env.txt", "w") as f:
+    f.write(os.getenv("PHIL_ENV"))
+
 import detections
 
 class statusBarApp(rumps.App):
@@ -155,6 +158,11 @@ def react():
                         break
                     is_locked = True
                     
+                    # Logging
+                    log_path = "/tmp/log_phil.txt"
+                    with open(log_path, "a") as f:
+                        f.write(f"{str(datetime.datetime.now().timestamp())} {str(rounded_pitch)} {str(confidence)}\n")
+                    
                     if type(value) == str:
                         if debug:
                             show_info = True
@@ -186,6 +194,7 @@ def react():
         
         except Exception as e:
             print("Uh, we should exit NOW")
+            print(e)
             break
 
     print("*** done recording")

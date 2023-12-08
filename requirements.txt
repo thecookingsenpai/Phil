@@ -1,5 +1,0 @@
-pyaudio
-noisereduce
-python-dotenv
-aubio
-rumps

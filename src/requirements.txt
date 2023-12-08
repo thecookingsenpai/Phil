@@ -1,0 +1,7 @@
+pyaudio
+aubio
+numpy
+rumps
+noisereduce
+torch
+python-dotenv
